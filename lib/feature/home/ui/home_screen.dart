@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:sample1/data/model/album_details.dart';
@@ -25,7 +26,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-late Services services;
+  final Services services=  Services();
 
   void _incrementCounter() {
     setState(() {
